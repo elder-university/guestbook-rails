@@ -1,0 +1,7 @@
+<h1>Guestbook</h1>
+
+<%= render 'form' %>
+
+<% @posts.each do |p| %>
+  <p><%= p.author %>: <%= p.content %></p>
+<% end %>
